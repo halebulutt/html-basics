@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td{
+            border: 3px solid rgb(8, 6, 121);
+            border-collapse: collapse;
+        }
+        td, th{
+            padding:15px;
+            text-align: left;
+        }
+        table{
+            border-spacing: 10px;
+        }
+        caption{
+            font-size:32px;
+        }
+
+        #tablo1 td, #tablo1 th{
+            border: 3px solid rgb(14, 11, 151);
+            border-collapse: collapse;
+
+        }
+        #tablo1 tr:nth-child(even){
+            background-color: teal;
+        }
+        #tablo1 tr:nth-child(odd) {
+            background-color:rgb(223, 26, 91)
+        }
+        #tablo2 td, #tablo2 th{
+            border: 2px solid rgb(223, 26, 91);
+            border-collapse: collapse;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <table id="tablo1" style="width:100%"> 
+        <caption>
+            Deneme Tablosu
+        </caption>
+        <tr>
+            <th>
+                Isim
+            </th>
+            <th>
+                Soyisim
+            </th>
+            <th>
+                Yaş
+            </th>
+            <th colspan="2"> Adres</th>
+            <th> Resim</th>
+            
+        </tr>
+        <tr>
+            <td>
+                Hale
+            </td>
+            <td> 
+                Bulut
+            </td>
+            <td>
+                20
+            </td>
+            <td> Denizli </td>
+            <td> Konya </td>
+            <td>
+                <img src="img/workplace.png.jfif" alt="" style="width:50px; height: 50px;">
+            </td>
+    </table>
+    <br> <br>
+
+    <table id="tablo2" style="width:100%">
+        <caption>
+            İsimler Numaralar Tablosu
+        </caption>
+        <tr> 
+            <th> Ad Soyad:</th>
+            <td> Hale Bulut</td>
+        </tr>
+        <tr>
+            <th rowspan="3"> Telefon:</th>
+            <td>55102785855</td>
+        </tr>
+        <tr>
+            <td> 55445898658</td>
+        </tr>
+        <tr>
+            <td> 55230562305</td>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- collapse ifadesi boşluğu yok eder.-->

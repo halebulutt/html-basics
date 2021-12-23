@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listeler</title>
+    <style>
+        #menu{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+        #menu li{
+            padding-left: 15px;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <ol type="a">
+        <li>
+            Hale
+        </li>
+        <li> 
+            Ahmet
+        </li>
+        <li>
+            Ömer
+        </li>
+    </ol>
+
+    <ol type="1" start="25"> <!-- 1 den değil de 25ten başla ama 1er artır demek istedik.-->
+        <li>
+            Hale
+            <ol start="60">
+                <li> bulut</li>
+            </ol>
+        </li>
+        
+        <li> 
+            Ahmet
+        </li>
+        <li>
+            Ömer
+        </li>
+    </ol>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <ul id="menu">
+        <li> Ana Sayfa</li>
+        <li> Hakkımızda</li>
+        <li> İletişim</li>
+    </ul>
+
+
+    <ul style="list-style-type: disc;">
+        <li>Hale</li>
+        <li>Ahmet</li>
+        <li> Ömer</li>
+    </ul>
+    <ul style="list-style-type: square;">
+        <li>Hale</li>
+        <li>Ahmet</li>
+        <li> Ömer</li>
+    </ul>
+    <ul style="list-style-type: circle;">
+        <li>Hale</li>
+        <li>Ahmet</li>
+        <li> Ömer</li>
+    </ul>
+    <ul style="list-style-type: none;">
+        <li>Hale</li>
+        <li>Ahmet
+
+            <ul style="list-style-type: square;">
+                <li> bulut</li>
+            </ul>
+        </li>
+        <li> Ömer</li>
+    </ul>
+
+    <dl>
+        <dt>Kalem</dt>
+        <dd>Yazı yazmayı sağlar</dd>
+        <br>
+        <dt>Silgi</dt>
+        <dd>Silmeyi sağlar</dd>
+       
+    </dl>
+
+
+</body>
+</html>

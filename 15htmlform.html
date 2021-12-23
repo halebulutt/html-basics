@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="degerlerial.html" method="get">
+        <fieldset>
+            <legend> İsim Bilgileri</legend>
+            <label for="ad"> Adınızı Girin:</label>
+        <input type="text" id="ad" name="ad"><br> <br>
+
+        <label for="soyad"> Soyadınızı Girin:</label>
+        <input type="text" id="soyad" name="soyad"><br> <br>
+
+        <label for="il"> Sehir Girin:</label>
+        <input list="sehirler" id="il" name="il">
+        <datalist id="sehirler"> 
+            <option value="bursa"> Bursa şehri</option>
+            <option value="istanbul"> İstanbul</option>
+            <option value="ankara"> Ankara</option>
+        </datalist>
+
+        </fieldset>
+
+        <fieldset> 
+            <legend> Değişik Bilgiler</legend>
+            <input type="radio" name="cinsiyet" value="erkek" id="erkek" checked="checked">
+        <label for="erkek"> Erkek</label>
+
+        <input type="radio" name="cinsiyet" value="kadın" id="kadın">
+        <label for="kadın"> Kadın</label>
+        
+        <br> <br>
+
+        <input type="checkbox" name="chbmavi" id="mavi" value="mavi" checked="checked">
+        <label for="mavi"> mavi </label>
+
+        <input type="checkbox" name="chbyesil" id="yeşil" value="yeşil">
+        <label for="yeşil"> yeşil </label>
+
+        <input type="checkbox" name="chbmor" id="mavi" value="mor">
+        <label for="mor"> mor </label>
+        <br> <br> <br>
+        </fieldset>
+
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Formu Sil">
+        <input type="button" onclick="alert('Merhaba')" value="Normal bir buton">
+        <br> <br>
+        <label for="arabalar"> Favori Marka</label>
+        <select name="arabalar" id="arabalar" multiple>
+            <option value="honda"> Honda</option>
+            <option value="reno"> Reno</option>
+            <option selected value="mercedes"> Mercedes</option>
+            <option value="bmw"> BMW</option>
+            <option value="peugeot"> Peugeot</option>
+        </select>
+
+        <br> <br> <br>
+        <label for="adres">Adres:</label>
+        <textarea name="adres" id="adres" cols="30" rows="10"></textarea> 
+<br>
+        <label for="bio">Biyografi:</label>
+        <textarea name="bio" id="bio" style="width:200px; height: 100px;"></textarea> 
+<br> <br>
+        <button type="button" onclick="alert('Selam')">Yeni Buton</button>
+        <br> <br>
+        <button type="reset" onclick="alert('Selam')"><img src="img/workplace.png.jfif"</button>
+
+        
+
+
+
+    </form>
+</body>
+</html>
